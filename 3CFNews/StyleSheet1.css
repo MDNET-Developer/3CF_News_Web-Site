@@ -1,0 +1,201 @@
+﻿body {
+}
+.id :hover{
+    margin:55px;
+}
+
+#DaxilOlBTN {
+    border-radius:100px;
+}
+/*menu dizayni css*/
+#divmenu {
+
+    width: 100%;
+    height: 50px;
+    background-color: goldenrod;
+   
+}
+
+
+.menu {
+    width: 100%;
+    height: 50px;
+
+    margin-right:1cm;
+    padding-bottom:1.2cm;
+    outline-color:black;
+}
+
+    .menu ul {
+        left: 0px;
+        top: 0px;
+        margin: 0px;
+        padding: 0px;
+        background-color: goldenrod;
+       
+    }
+        .menu ul li {
+            border-right: 1px solid silver;
+        }
+    li > a {
+        list-style: none;
+        color:white;
+        text-decoration-line:none;
+       
+    }
+    .menu > a:hover{
+        color:black;
+    }
+.foot {
+    background-color:khaki;
+    font-weight:bolder;
+    height:1cm;
+    
+}
+
+.menu ul li a{
+    border-right:1px black;
+}
+
+.menu > li {
+    position: relative;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    color: snow;
+    float: left;
+    height: 50px;
+    margin-right:5px;
+    padding: 10px 20px 10px 20px;
+    background-color: goldenrod;
+    list-style-type: none;
+    text-align: center;
+    width: 8%;
+    transition-property: height, width, background-color, color,font;
+    border-right: 10px black;
+}
+
+    .menu > li:hover {
+        background-attachment: fixed;
+        text-shadow: 10px 10px 100px yellow;
+        font: 40px;
+        color: black;
+        margin-right: 5px;
+        list-style: none;
+        background-color: yellow;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+.submenu {
+    display: none;
+    padding-bottom: -10px;
+    /*margin-top:40px;*/
+}
+
+    .submenu > li {
+        font-family: 'Times New Roman';
+        padding-bottom:55px;
+      
+        background-color: goldenrod;
+        list-style-type: none;
+        text-align: center;
+    }
+
+        .submenu > li:hover {
+         
+            color: black;
+           
+            background-color: yellow;
+            list-style-type: none;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+.menu > li:hover .submenu {
+    display: block;
+}
+.btnmenu {
+    display: none;
+}
+
+
+#btnmenu:hover {
+    width: 1.5cm;
+    height: 1.5cm;
+    transition: 5s;
+}
+.number:hover{
+
+    color:deepskyblue;
+    cursor:pointer;
+}
+/*-----footer-----*/
+
+.footer{
+    padding-left:-10cm;
+}
+/*---------------------------------FOTO QALEREYA----------------------------*/
+gallery-img {
+    height: 4cm;
+    z-index: -1;
+    width: 100%;
+}
+
+.gallery-p {
+    padding: 2px;
+}
+
+.gallery-text {
+    height: 150px;
+    background-color: rgba(251, 131, 18, 0.6);
+    display: none;
+    z-index: 1;
+    padding-top: 40px;
+    position: absolute;
+    text-align: center;
+    vertical-align: central;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -150px;
+    width: 100%;
+}
+
+.gallery-p:hover .gallery-text {
+    display: block;
+}
+
+/*Responsive menu media*/
+
+#BasliqMenu 
+{
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+
+    #BasliqMenu{
+        display:block;
+    }
+    #sosial{
+        display:none;
+    }
+    .videoplay{
+        display:none;
+    }
+
+    #divmenu {
+        float: left;
+        margin-right: -1cm;
+        position: relative;
+    }
+        #divmenu ul li {
+            float: left;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+      
+}
+
+
+

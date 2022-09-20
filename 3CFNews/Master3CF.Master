@@ -1,0 +1,183 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master3CF.master.cs" Inherits="_3CFNews.Master3CF" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Three color flag</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" href="Image/1606411452556.png" />
+</head>
+<body>
+ <script> 
+$(document).ready(function(){
+  $("#BasliqMenu").click(function(){
+    $("#divmenu").slideToggle("slow");
+  });
+});
+</script>
+
+  <%--  <script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "388a61d4-facf-4381-8ff8-2720ef64b727",
+      host: "https://wchat.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>--%>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+                <div class="row">
+                     <div id="BasliqMenu" style="width: 100%; height: 1.3cm; background-color: orange" class="col-12">
+
+                         <label class="
+glyphicon glyphicon-menu-hamburger"
+                             style="float: left; font-size: 40px; cursor: pointer;">
+                         </label>
+                                   <%--<label id="hamburger" style="float: left; font-size: 50px; cursor: pointer" class="glyphicon glyphicon-menu-hamburger"></label>
+                         <label id="iks" style="float: left; font-size: 50px; cursor: pointer;display:none;" class="glyphicon glyphicon-remove"></label>--%>
+                               </div>
+                         <div class="col-12" id="video" >
+                        
+                           <video class="videoplay" style="width:100%; height:4cm; background-color:black;" src="Video/1606414675605.mp4" autoplay loop />
+                         </div>
+
+                    <div class="col-12" style="position:sticky;top:0" >
+              
+                         <div ID="sosial" class="col-12" style="width:100% ;height:2cm; background-color:darkgoldenrod "  >
+                             <img style="text-align:left ; width:2cm;height:2cm" src="Image/1606411452556.png" /> <span><a style="text-decoration:none; color:snow; font-size:27px;margin-right:27px" href="AnaSehife.aspx">3CF.az</a></span>
+                        
+                            <!-- weather widget start --><%--<a style="margin-left:33px; width:3cm;height:3cm" target="_blank" href="https://www.booked.net/weather/baku-19309"><img src="https://w.bookcdn.com/weather/picture/13_19309_0_1_fff5d9_158_fff5d9_333333_08488D_3_fff5d9_333333_1_6.png?scode=124&domid=w209&anc_id=42182"  alt="booked.net"/></a>--%><!-- weather widget end -->
+                             <!-- weather widget start --><%--<a style="margin-left:33px; width:4cm;height:4cm; font-size:30px;" target="_blank" href="https://www.booked.net/weather/baku-19309"><img src="https://w.bookcdn.com/weather/picture/12_19309_1_1_2071c9_118_2071c9_ffffff_ffffff_3_2071c9_ffffff_1_6.png?scode=124&domid=&anc_id=68229"  alt="booked.net"/></a>--%><!-- weather widget end -->
+                           <span><!-- weather widget start --><a style="padding-top:0" target="_blank" href="https://www.booked.net/weather/baku-19309"><img src="https://w.bookcdn.com/weather/picture/23_19309_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=45505"  alt="booked.net"/></a><!-- weather widget end --></span>
+                             
+                             <input  type="text"; placeholder="Axtar..." id="Search" />
+                             <style>
+                                 #Search {
+                                    
+                                     width: 130px;
+                                     box-sizing: border-box;
+                                     border: 3px solid gold;
+                                     border-radius: 10px;
+                                     font-size: 16px;
+                                     background-color: white;
+                                     transition-property:  width , border;
+                                     transition-duration: 1s;
+                                     outline:none;
+                                     position:relative;
+                                   
+                                 }
+
+                                     #Search:focus {
+                                         width: 300px;
+                                         Border: 3px solid lightblue;
+                                         box-shadow:2px 2px 8px lightblue;
+                                         border-radius: 10px;
+
+                                     }
+                              
+                             </style>
+                             <a href="#" id="search" ><img src="Image/search.png" /></a>
+                             
+                     <a  href="https://www.instagram.com/" target="_blank"><img style="float:right" src="Image/insta.png" /></a>
+                             <a href="https://www.telegram.org/" target="_blank"><img style="float:right" src="Image/tele.png" /></a>
+                             <a href="https://www.youtube.com/" target="_blank"><img style="float:right" src="Image/you.png" /></a>
+                             <a href="https://www.facebook.com/" target="_blank"><img style="float:right" src="Image/face.png" /></a>
+
+                             
+                             
+                             </div>
+                        
+
+
+                        <asp:Literal ID="LtMenu" runat="server"></asp:Literal>
+                        </div>
+                      <br />
+                    <div>
+                  
+                    <div style="float:left">
+                        <span><iframe id="Piyasalar" src="https://www.ücretsiz.com/piyasalar.html" style="width:300px; height:100px;" frameborder="0"></iframe></span> 
+                    </div>
+                        </div>
+                        <br />
+                   
+                    <div style="float:right;" class="col-12">
+                        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                        <div class="elfsight-app-8b417702-a239-4c2d-bd6f-0bae127ba1a8"></div>
+                    </div>
+
+                  
+                    
+            
+           <%-- <img onclick="media()"; id="btnmenu" style="float:right ; font-size:77px ;cursor:pointer" src="Image/Menu.png" />--%>
+                       
+        
+
+
+    </div>
+
+                      <%--  --------------------------------------------------------------------------------------%>
+
+                        
+
+                </div>
+
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+                    
+            </asp:ContentPlaceHolder>
+              
+            <div class="container"> <div class="footer col-lg-12 " >
+
+                    <div style="background-color:white;width:100%; height:2cm;">
+
+                    </div>
+                    <div  style="background-color:goldenrod; font-family: Arial; font-size:20px;height:5cm;" />
+                    <br>
+                        <div class="col-md-3">
+                     <img style="text-align:left ; width:2cm;height:2cm" src="Image/1606411452556.png" /> <span style="font-size:28px"><a href="AnaSehife.aspx">3CF NEWS</a></span>
+                  
+                  
+                 
+              
+                        </div>
+                    <div class="col-md-9">
+                        <p style="font-size:17px">3CF.az Azərbaycanın xəbər saytı, Azərbaycandan ən son xəbərləri yayımlayır. Iqtisadi xeberler, Şou biznes xəbərləri , siyasi xeberler, kriminal xeberler, idman xeberleri, muharibe xeberleri, maliyye xeberleri, son xeberler təqdim edən ictimai-sosial saytdır. xeberler bu gun 2021</p>
+                    </div>
+
+                <div style="padding-top: 22px" class="col-lg-12">
+
+                    <div class="col-md-3">
+                        <a href="https://api.whatsapp.com/send?phone=00994552721664" style="display: table; float: left; font-family: sans-serif; text-decoration: none; margin: 2px auto; color: #fff; font-size: 0.7em; padding: 1em 1em 1em 3.5em; border-radius: 3em; font-weight: bold; background: #25d366 url('https://tochat.be/click-to-chat-directory/css/whatsapp.svg') no-repeat 1.2em center; background-size: 2em;">Whatssapp</a>
+                        
+                    </div>
+                    <div class="col-md-3"><a href="https://www.instagram.com/murad.qarabagli/">
+                            <img src="Image/insta.png" /></a></div>
+                    <div class="col-md-3"><a href="https://www.facebook.com/murad.aliyev.58173/">
+                        <img src="Image/face.png" /></a></div>
+                    <div class="col-md-3"><a href="https://www.youtube.com/channel/UCoRE971XGsd5e76u_t7yqSA">
+                        <img src="Image/you.png" /></a></div>
+                </div>
+
+
+            </div>
+            </div>
+               
+
+                        
+                        </div>
+               
+        
+             
+    </form>
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GirisAdmin.master.cs" Inherits="_3CFNews.Admin.GirisAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+   
+</head>
+<body>
+
+     <style>
+        /*bas admin panel*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    width: 15%;
+    background-color: white;
+    border: 1px solid silver;
+    padding: 0;
+    height: 100%;
+    position: fixed;
+    border-radius: 20px;
+}
+
+
+
+li a {
+    text-decoration: none;
+    outline: none;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px 8px;
+    transition-property: width, background-color, font-size,margin-left;
+    transition-duration: 1s;
+    border-bottom: 1px solid silver;
+}
+
+    li a:hover {
+        text-decoration: none;
+        outline: none;
+        background-color: #1e90ff;
+        width: 200px;
+        margin-left: 20px;
+        border-radius: 20px;
+        color: snow;
+    }
+
+    li a.active {
+        background-color: #1e90ff;
+        border-radius: 20px;
+        color: white;
+    }
+    </style>
+
+    <form id="form1" runat="server">
+   
+        <div class="col-lg-2">
+
+            <ul>
+                <li><a class="active" href="#">3CF ADMIN</a></li>
+                <li><a href="Default.aspx">Ana səhifə</a> </li>
+                <li><a href="Menu.aspx">Menu</a> </li>
+                <li><a href="NewsEdit.aspx">Xəbərlər</a> </li>
+
+             
+
+            </ul>
+
+
+        </div>
+        <div class="col-lg-10">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+             
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+
+
+    
+
+
+
+</body>
+</html>
